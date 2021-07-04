@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+
+<html>
+
+    <head>
+        <title>Color list</title>
+
+        <style>
+
+            #container{
+                width: 60%;
+                height: auto;
+                border: 1px solid black;
+                margin: auto;
+                padding: 1%;
+            }
+            #table{
+                display: grid;
+                grid-template-rows: auto;
+                grid-template-columns: auto;
+                grid-gap: 1px;
+                margin: auto;
+                width: 70%;
+                margin-top: 5% ;
+                grid-template: "a"
+                               "b"
+                               "c"
+                               "d"
+                               "e"
+                               "f"
+                               "g"
+                               "h"
+                               "i";
+
+
+            }
+            .item1{
+                grid-area: a;
+                background-color: wheat;
+            }
+            .item2{
+                grid-area: b;
+                background-color: rgb(156, 150, 245);
+
+            }
+            .item3{
+                grid-area: c;
+                background-color: lightgray;
+
+            }
+            .item4{
+                grid-area: d;
+                background-color: lightgreen;
+               
+            }
+            .item5{
+                grid-area: e;
+                background-color: rgb(255, 136, 136);
+
+            }
+            .item6{
+                grid-area: f;
+                background-color: rgb(255, 255, 130);
+            } 
+            .item7{
+                grid-area: g;
+                background-color: rgb(164, 255, 255)
+            }
+            .item8{
+                grid-area: h;
+                background-color: rgb(235, 234, 234);
+            }
+            .item9{
+                grid-area: i;
+                background-color: darkgrey;
+            } 
+            div>div{
+                padding: 2%;
+            }
+            
+            #table>div{
+                opacity: 0.7;
+            }
+            .item1:hover{
+                color: rgb(48, 46, 46);
+            }
+            .item2:hover{
+                color: darkblue;
+                
+            }
+            .item3:hover{
+                color:rgb(82, 81, 81) ;
+            }
+            .item4:hover{
+                color: green;
+            }
+            .item5:hover{
+                color: red;
+            }
+            .item6:hover{
+                color: rgb(177, 177, 49);                
+            }
+            .item7:hover{
+                color: rgb(0, 241, 241);                
+            }
+            .item8:hover{
+                color: gray;
+                
+            }
+            .item9:hover{
+                color: black;
+                
+            }
+            .item1:hover,.item2:hover,.item3:hover,.item4:hover,.item5:hover,.item6:hover,.item7:hover,.item8:hover,.item9:hover{
+                transform: scale(1.1);
+                font-weight: bold;
+                opacity: 1 !important;
+            }
+            div>div{
+                border: 1px solid black;
+                margin-bottom: 2px;
+            }
+            
+            
+            
+
+            
+
+        </style>
+    </head>
+
+    <body>
+        
+        <div id="table";>
+
+            <div class="item1">Dapibus ac facilisis in</div>
+            <div class="item2">This is primary list group item</div>
+            <div class="item3">This is secondary list group item</div>
+            <div class="item4">This is a success list group item</div>
+            <div class="item5">This is a danger list group item</div>
+            <div class="item6">This is a warning list group item</div>
+            <div class="item7">This is a info list group item</div>
+            <div class="item8">This is a light list group item</div>
+            <div class="item9">This is a dark list group item</div>
+        </div>
+
+
+    </body>
+
+</html>
